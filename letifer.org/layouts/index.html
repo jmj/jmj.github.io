@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ .Site.Title }}</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #000000;
+            color: #880808;
+        }
+        .container {
+            text-align: center;
+            padding: 20px;
+        }
+        h1 { margin-bottom: 5px; font-size: 2rem; }
+        p { margin-top: 0; color: #666; font-size: 1.1rem; }
+        .links a {
+            display: inline-block;
+            margin: 10px;
+            color: #0076ff;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .links a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>{{ .Site.Title }}</h1>
+        <p>{{ .Site.Params.subtitle }}</p>
+        <div class="links">
+            {{ range .Site.Params.contactLinks }}
+                <a href="{{ .url }}" target="_blank" rel="noopener noreferrer">{{ .name }}</a>
+            {{ end }}
+        </div>
+    </div>
+</body>
+</html>
+
