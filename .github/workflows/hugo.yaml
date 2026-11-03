@@ -11,7 +11,7 @@ env:
 on:
   push:
     branches:
-      - main
+      - master
   workflow_dispatch:
 permissions:
   contents: read
@@ -116,6 +116,7 @@ jobs:
         run: |
           echo "Building the project..."
           hugo build \
+            --logLevel debug \
             --gc \
             --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/" \
