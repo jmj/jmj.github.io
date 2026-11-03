@@ -1,0 +1,15 @@
+baseURL = 'https://letifer.org/'
+locale = 'en-us'
+title = 'letifer.org'
+
+[params]
+  subtitle = 'Varum Est Letifer'
+  contactLinks = [
+    { name = 'Email', url = 'mailto:jeremyj@letifer.org' },
+    { name = 'LinkedIn', url = 'https://linkedin.com/in/jeremymjones/' },
+    { name = 'GitHub', url = 'https://github.com/jmj' },
+  ]
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
