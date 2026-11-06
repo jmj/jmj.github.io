@@ -10,6 +10,10 @@ title = 'letifer.org'
     { name = 'GitHub', url = 'https://github.com/jmj' },
     { name = 'Gitlab', url = 'https://gitlab.com/jmj' },
   ]
+  quotes = [
+    "The fist step is the one you believe in",
+    "The second one might be profound"
+    ]
 
 [caches]
   [caches.images]
